@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A77CE1452AFC21B100BE2F01 /* Drawing_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */; };
-		A77CE1472AFC21B100BE2F01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE1462AFC21B100BE2F01 /* ContentView.swift */; };
 		A77CE1492AFC21B200BE2F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE1482AFC21B200BE2F01 /* Assets.xcassets */; };
 		A77CE14C2AFC21B200BE2F01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE14B2AFC21B200BE2F01 /* Preview Assets.xcassets */; };
 		A77CE1562AFC21B200BE2F01 /* Drawing_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE1552AFC21B200BE2F01 /* Drawing_ProjectTests.swift */; };
 		A77CE1602AFC21B200BE2F01 /* Drawing_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE15F2AFC21B200BE2F01 /* Drawing_ProjectUITests.swift */; };
 		A77CE1622AFC21B200BE2F01 /* Drawing_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE1612AFC21B200BE2F01 /* Drawing_ProjectUITestsLaunchTests.swift */; };
+		A7AE458C2AFD61E200BC7182 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AE458B2AFD61E200BC7182 /* DrawingView.swift */; };
+		A7AE458E2AFD622900BC7182 /* DrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AE458D2AFD622900BC7182 /* DrawingEngine.swift */; };
+		A7AE45902AFD63B600BC7182 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AE458F2AFD63B600BC7182 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		A77CE1412AFC21B100BE2F01 /* Drawing Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drawing Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing_ProjectApp.swift; sourceTree = "<group>"; };
-		A77CE1462AFC21B100BE2F01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A77CE1482AFC21B200BE2F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77CE14B2AFC21B200BE2F01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A77CE1512AFC21B200BE2F01 /* Drawing ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drawing ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		A77CE15B2AFC21B200BE2F01 /* Drawing ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drawing ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77CE15F2AFC21B200BE2F01 /* Drawing_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing_ProjectUITests.swift; sourceTree = "<group>"; };
 		A77CE1612AFC21B200BE2F01 /* Drawing_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7AE458B2AFD61E200BC7182 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		A7AE458D2AFD622900BC7182 /* DrawingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEngine.swift; sourceTree = "<group>"; };
+		A7AE458F2AFD63B600BC7182 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		A77CE1432AFC21B100BE2F01 /* Drawing Project */ = {
 			isa = PBXGroup;
 			children = (
+				A7AE458F2AFD63B600BC7182 /* Line.swift */,
+				A7AE458D2AFD622900BC7182 /* DrawingEngine.swift */,
+				A7AE458B2AFD61E200BC7182 /* DrawingView.swift */,
 				A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */,
-				A77CE1462AFC21B100BE2F01 /* ContentView.swift */,
 				A77CE1482AFC21B200BE2F01 /* Assets.xcassets */,
 				A77CE14A2AFC21B200BE2F01 /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77CE1472AFC21B100BE2F01 /* ContentView.swift in Sources */,
+				A7AE458E2AFD622900BC7182 /* DrawingEngine.swift in Sources */,
+				A7AE458C2AFD61E200BC7182 /* DrawingView.swift in Sources */,
 				A77CE1452AFC21B100BE2F01 /* Drawing_ProjectApp.swift in Sources */,
+				A7AE45902AFD63B600BC7182 /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
