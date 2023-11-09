@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73D61EC2AFD7AC0005005E6 /* t shirt.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A73D61EB2AFD7AC0005005E6 /* t shirt.usdz */; };
+		A73D61F02AFD7B34005005E6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D61EF2AFD7B34005005E6 /* Model.swift */; };
+		A73D61F22AFD7B5E005005E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D61F12AFD7B5E005005E6 /* HomeView.swift */; };
 		A77CE1452AFC21B100BE2F01 /* Drawing_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */; };
 		A77CE1492AFC21B200BE2F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE1482AFC21B200BE2F01 /* Assets.xcassets */; };
 		A77CE14C2AFC21B200BE2F01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE14B2AFC21B200BE2F01 /* Preview Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A73D61EB2AFD7AC0005005E6 /* t shirt.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "t shirt.usdz"; path = "../../../../Documents/t shirt.usdz"; sourceTree = "<group>"; };
+		A73D61EF2AFD7B34005005E6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A73D61F12AFD7B5E005005E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A77CE1412AFC21B100BE2F01 /* Drawing Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drawing Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing_ProjectApp.swift; sourceTree = "<group>"; };
 		A77CE1482AFC21B200BE2F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,10 +104,13 @@
 		A77CE1432AFC21B100BE2F01 /* Drawing Project */ = {
 			isa = PBXGroup;
 			children = (
+				A73D61EF2AFD7B34005005E6 /* Model.swift */,
 				A7AE458F2AFD63B600BC7182 /* Line.swift */,
+				A73D61F12AFD7B5E005005E6 /* HomeView.swift */,
 				A7AE458D2AFD622900BC7182 /* DrawingEngine.swift */,
 				A7AE458B2AFD61E200BC7182 /* DrawingView.swift */,
 				A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */,
+				A73D61EB2AFD7AC0005005E6 /* t shirt.usdz */,
 				A77CE1482AFC21B200BE2F01 /* Assets.xcassets */,
 				A77CE14A2AFC21B200BE2F01 /* Preview Content */,
 			);
@@ -239,6 +248,7 @@
 			files = (
 				A77CE14C2AFC21B200BE2F01 /* Preview Assets.xcassets in Resources */,
 				A77CE1492AFC21B200BE2F01 /* Assets.xcassets in Resources */,
+				A73D61EC2AFD7AC0005005E6 /* t shirt.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73D61F02AFD7B34005005E6 /* Model.swift in Sources */,
 				A7AE458E2AFD622900BC7182 /* DrawingEngine.swift in Sources */,
 				A7AE458C2AFD61E200BC7182 /* DrawingView.swift in Sources */,
+				A73D61F22AFD7B5E005005E6 /* HomeView.swift in Sources */,
 				A77CE1452AFC21B100BE2F01 /* Drawing_ProjectApp.swift in Sources */,
 				A7AE45902AFD63B600BC7182 /* Line.swift in Sources */,
 			);
