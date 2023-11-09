@@ -10,3 +10,8 @@ Inspiring videos: [drawing](https://www.youtube.com/watch?v=I-Eacg9Kjuw), [image
 - [ ] Inserting object
 
 - [ ] *Main Goal*: Drawing into 3D inserted objects by combining the above goals.
+
+
+### Objects source list:
+
+- [T-shirt](https://free3d.com/3d-model/t-shirt-unisex-121933.html)
