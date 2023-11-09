@@ -1,6 +1,7 @@
 # Welcome to Drawing Project :)
 
 This project aim to create a drawing program using SwiftUI.
+Inspiring videos: [drawing](https://www.youtube.com/watch?v=I-Eacg9Kjuw), [image](https://www.youtube.com/watch?v=d4ciSOLvIH8).
 
 ### Task list
 
