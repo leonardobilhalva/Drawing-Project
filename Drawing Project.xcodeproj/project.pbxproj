@@ -108,8 +108,8 @@
 			children = (
 				A73D61EF2AFD7B34005005E6 /* Model.swift */,
 				A7AE458F2AFD63B600BC7182 /* Line.swift */,
-				A7AE458D2AFD622900BC7182 /* DrawingEngine.swift */,
 				A73D61F12AFD7B5E005005E6 /* HomeView.swift */,
+				A7AE458D2AFD622900BC7182 /* DrawingEngine.swift */,
 				A7AE458B2AFD61E200BC7182 /* DrawingView.swift */,
 				A743CBDF2AFE9A3800EB15EE /* ModelDrawingView.swift */,
 				A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */,
