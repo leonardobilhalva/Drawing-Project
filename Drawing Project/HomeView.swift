@@ -9,29 +9,30 @@ import SwiftUI
 import SceneKit
 
 struct HomeView: View {
+    
     var body: some View {
-        Text("Select the shirt to draw").font(.largeTitle)
+        NavigationView {
+            VStack {
+                Text("Select the shirt to draw")
+                    .font(.largeTitle)
 
-        
-        ScrollView(.horizontal, showsIndicators: true) { // showsIndicators controla a visibilidade da barra de rolagem
-                  HStack(spacing: 20) {
-                      SceneView(scene: SCNScene (named: models[0].modelName), options:
-                                  [.autoenablesDefaultLighting,.allowsCameraControl])
-                      .frame (width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 2)
-                      Spacer (minLength: 0)
-                      
-                      SceneView(scene: SCNScene (named: models[1].modelName), options:
-                                  [.autoenablesDefaultLighting,.allowsCameraControl])
-                      .frame (width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 2)
-                      Spacer (minLength: 0)
-                      
-                      SceneView(scene: SCNScene (named: models[2].modelName), options:
-                                  [.autoenablesDefaultLighting,.allowsCameraControl])
-                      .frame (width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 2)
-                      Spacer (minLength: 0)
-                      }
-                  }
-                  .padding()
-              }
-      
+                ScrollView(.horizontal, showsIndicators: true) {
+                    HStack(spacing: 20) {
+                        ForEach(0..<models.count, id: \.self) { index in
+                            NavigationLink(destination: ModelDrawingView(model: models[index])) {
+                                SceneView(
+                                    scene: SCNScene(named: models[index].modelName),
+                                    options: [.autoenablesDefaultLighting, .allowsCameraControl]
+                                )
+                                .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 2)
+                                .background(Color.gray.opacity(0.3)) // Para melhorar a interação visual
+                                .cornerRadius(10) // Para aparência arredondada
+                            }
+                        }
+                    }
+                }
+                .padding()
+            }
+        }
+    }
 }

@@ -12,7 +12,8 @@ struct Drawing_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            HomeView()
+            //HomeView()
+            ModelDrawingView(model: models[01])
         }
     }
 }
