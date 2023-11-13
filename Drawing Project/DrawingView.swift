@@ -107,7 +107,7 @@ struct DrawingView: View {
                 print("Unknown Error: \(error).")
             }
             
-            applyTextureToModel(modelName: modelName, scene: scene)
+//            applyTextureToModel(modelName: modelName, scene: scene)
            
         })
 
@@ -139,7 +139,7 @@ struct DrawingView: View {
 
         // Create and set the material with the new texture
         let material = SCNMaterial()
-        material.diffuse.contents = UIColor.red
+        material.diffuse.contents = image
         
         if nodeToUpdate.geometry != nil {
             nodeToUpdate.geometry?.firstMaterial = material
@@ -148,18 +148,18 @@ struct DrawingView: View {
         }
     }
     
-    
-    func applyTextureToModel(modelName: String, scene: SCNScene) {
-        guard let node = scene.rootNode.childNodes.first(where: { $0.geometry != nil }) else {
-            print("Erro: Nó do objeto não encontrado.")
-            return
-        }
-        print("leo)")
-
-        let material = SCNMaterial()
-        material.diffuse.contents = drawnImage // Nome do arquivo de imagem
-        node.geometry?.firstMaterial = material
-    }
+//    
+//    func applyTextureToModel(modelName: String, scene: SCNScene) {
+//        guard let node = scene.rootNode.childNodes.first(where: { $0.geometry != nil }) else {
+//            print("Erro: Nó do objeto não encontrado.")
+//            return
+//        }
+//        print("leo)")
+//
+//        let material = SCNMaterial()
+//        material.diffuse.contents = drawnImage // Nome do arquivo de imagem
+//        node.geometry?.firstMaterial = material
+//    }
 
 }
 
