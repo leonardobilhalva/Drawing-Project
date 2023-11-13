@@ -3,4 +3,102 @@
    uuid = "23DE1755-B21E-4BE0-A070-FFF1531C087E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B98C658E-D14A-4681-AE94-AEBB64E78536"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing Project/DrawingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "drawLinesAsImage(lines:in:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A0074A4-2A69-4A4D-BD7D-69AE230449B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing Project/DrawingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "calculateDrawingRect(forLines:lineWidth:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9099ABBC-79A7-459B-836A-AF9C7E51F198"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing Project/DrawingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "calculateDrawingRect(forLines:lineWidth:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "9099ABBC-79A7-459B-836A-AF9C7E51F198 - 7155cb0e0a35ebe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing_Project.calculateDrawingRect(forLines: Swift.Array&lt;Drawing_Project.Line&gt;, lineWidth: CoreGraphics.CGFloat) -&gt; __C.CGRect"
+                  moduleName = "Drawing Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/leo/pret/Drawing-Project/Drawing%20Project/DrawingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  uuid = "9099ABBC-79A7-459B-836A-AF9C7E51F198 - 7155cb0e0a35ebe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Drawing_Project.calculateDrawingRect(forLines: Swift.Array&lt;Drawing_Project.Line&gt;, lineWidth: CoreGraphics.CGFloat) -&gt; __C.CGRect"
+                  moduleName = "Drawing Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/leo/pret/Drawing-Project/Drawing%20Project/DrawingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "904">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F406C24C-4A16-4F98-A049-ADF13F78D3F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Drawing Project/DrawingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

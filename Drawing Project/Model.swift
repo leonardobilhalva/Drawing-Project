@@ -16,6 +16,6 @@ struct Model : Hashable {
 
 var models = [
     Model(id: 0, name: "Shirt 01", modelName: "t shirt.usdz"),
-    Model(id: 1, name: "Shirt 02", modelName: "t shirt.usdz"),
+    Model(id: 1, name: "Shirt 02", modelName: "CC0_-_Stone.usdz"),
     Model(id: 2, name: "Shirt 03", modelName: "t shirt.usdz"),
 ]

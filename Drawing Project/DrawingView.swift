@@ -1,6 +1,7 @@
 
 import SwiftUI
 import UIKit
+import SceneKit
 
 struct DrawingView: View {
 
@@ -15,16 +16,14 @@ struct DrawingView: View {
     let engine = DrawingEngine()
     @State private var showConfirmation: Bool = false
     
+    var scene: SCNScene
+    var nodeName: String // Adicione isso
+    var modelName: String
+    
     var body: some View {
         
         VStack {
-            if let image = drawnImage {
-                  Image(uiImage: image)
-                      .resizable()
-                      .aspectRatio(contentMode: .fit)
-                      .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 5)
-                      .border(Color.black, width: 1) // Adiciona uma borda para visualizar o tamanho da imagem
-            }
+    
             
             HStack {
                 ColorPicker("line color", selection: $selectedColor)
@@ -97,6 +96,19 @@ struct DrawingView: View {
             let drawingRect = calculateDrawingRect(forLines: lines, lineWidth: selectedLineWidth)
             // Gera a imagem a partir das linhas desenhadas
             drawnImage = drawLinesAsImage(lines: lines, in: drawingRect)
+
+            do {
+                try updateTextureFor3DObject(with: drawnImage)
+            } catch TextureUpdateError.imageNotFound {
+                print("Erro: Image not found.")
+            } catch TextureUpdateError.objectNodeNotFound {
+                print("Erro: object node not fund.")
+            } catch {
+                print("Unknown Error: \(error).")
+            }
+            
+            applyTextureToModel(modelName: modelName, scene: scene)
+           
         })
 
         
@@ -104,13 +116,53 @@ struct DrawingView: View {
             
         }
     }
+    
+    func updateTextureFor3DObject(with image: UIImage?) throws {
+        guard let image = image else {
+            throw TextureUpdateError.imageNotFound
+        }
+        
+        // Attempt to find an existing node with the given name
+        let objectNode = scene.rootNode.childNode(withName: nodeName, recursively: true)
+        
+        // If the node does not exist, create a new one
+        let nodeToUpdate: SCNNode
+        if let existingNode = objectNode {
+            nodeToUpdate = existingNode
+        } else {
+            // Create a new geometry for the texture, e.g., a plane
+            let geometry =  SCNPlane(width: 50.0, height: 50.0)// Adjust size as needed
+            nodeToUpdate = SCNNode(geometry: geometry)
+            nodeToUpdate.name = nodeName
+            scene.rootNode.addChildNode(nodeToUpdate)
+        }
+
+        // Create and set the material with the new texture
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor.red
+        
+        if nodeToUpdate.geometry != nil {
+            nodeToUpdate.geometry?.firstMaterial = material
+        } else {
+            print("unable to get geometry")
+        }
+    }
+    
+    
+    func applyTextureToModel(modelName: String, scene: SCNScene) {
+        guard let node = scene.rootNode.childNodes.first(where: { $0.geometry != nil }) else {
+            print("Erro: Nó do objeto não encontrado.")
+            return
+        }
+        print("leo)")
+
+        let material = SCNMaterial()
+        material.diffuse.contents = drawnImage // Nome do arquivo de imagem
+        node.geometry?.firstMaterial = material
+    }
+
 }
 
-//struct DrawingView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DrawingView()
-//    }
-//}
 
 func drawLinesAsImage(lines: [Line], in rect: CGRect) -> UIImage? {
     let renderer = UIGraphicsImageRenderer(bounds: rect)

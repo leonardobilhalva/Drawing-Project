@@ -11,6 +11,9 @@
 		A73D61F02AFD7B34005005E6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D61EF2AFD7B34005005E6 /* Model.swift */; };
 		A73D61F22AFD7B5E005005E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D61F12AFD7B5E005005E6 /* HomeView.swift */; };
 		A743CBE02AFE9A3800EB15EE /* ModelDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743CBDF2AFE9A3800EB15EE /* ModelDrawingView.swift */; };
+		A74ADF2A2B029D3900854180 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74ADF292B029D3900854180 /* Errors.swift */; };
+		A74ADF2C2B02C0C400854180 /* CC0_-_Stone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A74ADF2B2B02C0C400854180 /* CC0_-_Stone.usdz */; };
+		A74ADF2E2B02C0CE00854180 /* CC0_-_Stone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A74ADF2D2B02C0CE00854180 /* CC0_-_Stone.usdz */; };
 		A77CE1452AFC21B100BE2F01 /* Drawing_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */; };
 		A77CE1492AFC21B200BE2F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE1482AFC21B200BE2F01 /* Assets.xcassets */; };
 		A77CE14C2AFC21B200BE2F01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE14B2AFC21B200BE2F01 /* Preview Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		A73D61EF2AFD7B34005005E6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A73D61F12AFD7B5E005005E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A743CBDF2AFE9A3800EB15EE /* ModelDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDrawingView.swift; sourceTree = "<group>"; };
+		A74ADF292B029D3900854180 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		A74ADF2B2B02C0C400854180 /* CC0_-_Stone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "CC0_-_Stone.usdz"; path = "../../../../Downloads/uploads-files-4319444-Stone/CC0_-_Stone.usdz"; sourceTree = "<group>"; };
+		A74ADF2D2B02C0CE00854180 /* CC0_-_Stone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "CC0_-_Stone.usdz"; path = "../../../../Downloads/uploads-files-4319444-Stone/CC0_-_Stone.usdz"; sourceTree = "<group>"; };
 		A77CE1412AFC21B100BE2F01 /* Drawing Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drawing Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing_ProjectApp.swift; sourceTree = "<group>"; };
 		A77CE1482AFC21B200BE2F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,8 +120,10 @@
 				A743CBDF2AFE9A3800EB15EE /* ModelDrawingView.swift */,
 				A77CE1442AFC21B100BE2F01 /* Drawing_ProjectApp.swift */,
 				A73D61EB2AFD7AC0005005E6 /* t shirt.usdz */,
+				A74ADF2D2B02C0CE00854180 /* CC0_-_Stone.usdz */,
 				A77CE1482AFC21B200BE2F01 /* Assets.xcassets */,
 				A77CE14A2AFC21B200BE2F01 /* Preview Content */,
+				A74ADF292B029D3900854180 /* Errors.swift */,
 			);
 			path = "Drawing Project";
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 		A77CE15E2AFC21B200BE2F01 /* Drawing ProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
+				A74ADF2B2B02C0C400854180 /* CC0_-_Stone.usdz */,
 				A77CE15F2AFC21B200BE2F01 /* Drawing_ProjectUITests.swift */,
 				A77CE1612AFC21B200BE2F01 /* Drawing_ProjectUITestsLaunchTests.swift */,
 			);
@@ -249,8 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74ADF2E2B02C0CE00854180 /* CC0_-_Stone.usdz in Resources */,
 				A77CE14C2AFC21B200BE2F01 /* Preview Assets.xcassets in Resources */,
 				A77CE1492AFC21B200BE2F01 /* Assets.xcassets in Resources */,
+				A74ADF2C2B02C0C400854180 /* CC0_-_Stone.usdz in Resources */,
 				A73D61EC2AFD7AC0005005E6 /* t shirt.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +291,7 @@
 				A743CBE02AFE9A3800EB15EE /* ModelDrawingView.swift in Sources */,
 				A7AE458E2AFD622900BC7182 /* DrawingEngine.swift in Sources */,
 				A7AE458C2AFD61E200BC7182 /* DrawingView.swift in Sources */,
+				A74ADF2A2B029D3900854180 /* Errors.swift in Sources */,
 				A73D61F22AFD7B5E005005E6 /* HomeView.swift in Sources */,
 				A77CE1452AFC21B100BE2F01 /* Drawing_ProjectApp.swift in Sources */,
 				A7AE45902AFD63B600BC7182 /* Line.swift in Sources */,
